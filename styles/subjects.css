@@ -1,0 +1,138 @@
+body {
+  display: grid;
+  margin: 0 auto;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 6fr 1fr;
+  font-family: "Raleway", sans-serif;
+}
+
+.headerarea {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: #13294b;
+}
+.subheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(69, 174, 209, 0.5);
+  grid-column: 1/4;
+  grid-row: 2/3;
+  padding: 2.3em;
+}
+h2 {
+  font-weight: bolder;
+}
+
+nav {
+  background: #13294b;
+}
+.sign {
+  background: #45aed1;
+  border-radius: 4px;
+  margin-left: 3px;
+}
+.title:hover {
+  background: #13294b;
+  color: #ffffff !important;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #000000 !important;
+  background: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.subjects {
+  color: #000000 !important;
+}
+
+.subjects:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  background-color: #13294b;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social {
+  margin: 10px;
+}
+
+.main {
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: space-between;
+}
+
+.special {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.special li {
+  display: block;
+  float: left;
+  padding: 2em;
+  /* background: red; */
+  width: 30%;
+  margin: 1em;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-weight: 999;
+}
+
+.floatleft {
+  float: left;
+  font-weight: bolder;
+  font-weight: 999;
+  margin: 0.25em;
+}
+
+@media only screen and (max-width: 768px) {
+  .sign {
+    background: #45aed1;
+    border-radius: 4px;
+    margin-left: 0px;
+  }
+  .subheading {
+    padding: 30px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+  }
+}
